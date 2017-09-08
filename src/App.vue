@@ -1,20 +1,24 @@
 <template>
     <div id="app">
         <section class="colsmall">
-            <div class="small-6 columns">
+            <div class="small-6 columns text-center">
                 <h1 class="text-center" style="margin-top: 10;">YOU</h1>
+            
                 <div class="healthbar">
                     <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width: playerHealth + '%'} ">
                         {{ playerHealth }}
                     </div>
+                     <img src="./assets/playerface.jpg" style="width: 100px; height: 80px; margin: 0 auto;">
                 </div>
             </div>
-            <div class="small-6 columns">     
-                <h1 class="text-center">Colson</h1> 
+            <div class="small-6 columns text-center">     
+                <h1 class="">Colson</h1> 
+     
                 <div class="healthbar">
                     <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width: monsterHealth + '%'} ">
-                        {{ monsterHealth }}
+                        {{ monsterHealth }}                               
                     </div>
+                    <img src="./assets/colsonface.jpg" style="width: 100px; height: 80px; margin: 0 auto;">
                 </div>
             </div>
         </section>
@@ -160,7 +164,7 @@ export default{
 }
 
 .controls, .log {
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
